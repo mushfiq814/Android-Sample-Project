@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_dark"
-    android:backgroundTint="@android:color/background_dark"
+    android:background="@color/colorPrimary"
     android:minHeight="207dp"
     tools:context="com.mushfiqmahmud.sampleproject.MainActivity">
 
@@ -14,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/counterText"
-        android:textColor="#FFF"
+        android:fontFamily="monospace"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -30,8 +29,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="72dp"
         android:text="@string/btnClickText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCounter"
+        app:layout_constraintStart_toStartOf="@+id/textViewCounter"
         app:layout_constraintTop_toBottomOf="@+id/textViewCounter" />
 
     <Button
@@ -42,8 +42,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
         android:text="@string/btnResetText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/btnClick"
+        app:layout_constraintStart_toStartOf="@+id/btnClick"
         app:layout_constraintTop_toBottomOf="@+id/btnClick" />
 
 </android.support.constraint.ConstraintLayout>
