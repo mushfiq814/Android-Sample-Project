@@ -3,4 +3,6 @@
     <string name="counterText">0</string>
     <string name="btnClickText">Click</string>
     <string name="btnResetText">Reset</string>
+    <string name="secondActivityText"><b>Congratulations!</b> You clicked a button!\nHello and welcome to a new page!</string>
+    <string name="btnSecondScreenText">Please Click Me</string>
 </resources>
