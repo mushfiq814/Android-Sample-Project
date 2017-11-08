@@ -7,13 +7,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import static android.webkit.ConsoleMessage.MessageLevel.LOG;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnClick; // Create button and textview objects to be used later
-    Button btnReset;
-    Button btnNewScreen;
+    TextView btnClick; // Create button and textview objects to be used later
+    TextView btnReset;
+    TextView btnNewScreen;
     TextView textCounter;
 
     @Override
@@ -21,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); // This connects the main activity view xml file to this java file
 
-        btnClick = (Button)findViewById(R.id.btnClick);
-        btnReset = (Button)findViewById(R.id.btnReset);
-        btnNewScreen = (Button)findViewById(R.id.btnNewScreen);
+        btnClick = (TextView) findViewById(R.id.btnClick);
+        btnReset = (TextView) findViewById(R.id.btnReset);
+        btnNewScreen = (TextView) findViewById(R.id.btnNewScreen);
         textCounter = (TextView)findViewById(R.id.textViewCounter);
 
         btnClick.setOnClickListener(new View.OnClickListener() {
